@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[Safra]
+(
+	[IdSafra] BIGINT NOT NULL PRIMARY KEY IDENTITY(1,1),
+	[Nome] VARCHAR(250) NOT NULL,
+	[Ano] INT NOT NULL DEFAULT year(getdate()),
+)
